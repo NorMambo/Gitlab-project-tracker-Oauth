@@ -1,0 +1,49 @@
+<div class="issue-grid {{issues.[0].project_id}}">
+  {{#each issues}}
+  <div class="issue-grid-item I{{iid}}">
+
+    <div class="title">{{title}}</div>
+
+    <div class="title">Description [shift + enter to save]:</div>
+    <div class="issue-description common-section I{{iid}}">{{description}}</div>
+    <textarea class="modify-description-textarea common-section I{{iid}} hidden">{{description}}</textarea>
+
+    <div class="title">State:</div>
+    <div class="common-section s-type1">
+      {{#if (eq state 'closed')}}
+        <div class="state-bar I{{iid}}" style="background-color: red;">{{state}}</div>
+      {{else}}
+         <div class="state-bar I{{iid}}" style="background-color: lightgreen;">{{state}}</div>
+      {{/if}}
+      <div class="button status-button I{{iid}}">change</div>
+    </div>
+
+    <div class="title">Author:</div>
+    <div class="common-section s-type2">
+      <div class="author-bar">{{author.name}}</div>
+    </div>
+
+  <div class="title">Labels:</div>
+  <select id="slim-select-I{{iid}}" class="slim-select" multiple>
+    {{#if labels}}
+      {{#each labels}}
+        <option value="{{this.id}}" style="background-color: {{this.color}};"
+        {{#if this.selected}}
+        selected
+        {{/if}}
+        >{{this.name}}</option>
+      {{/each}}
+    {{/if}}
+  </select>
+
+
+  <div class="title">Votes:</div>
+  <div class="common-section s-type2 I{{iid}} emoji-panel">
+    {{#each emojiList}}
+    <div class="emoji I{{../iid}} {{this.name}} {{this.award_id}}">{{this.symbol}}</div>
+    {{/each}}
+  </div>
+
+  </div>
+  {{/each}}
+</div>

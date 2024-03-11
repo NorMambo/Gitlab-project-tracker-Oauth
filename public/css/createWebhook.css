@@ -1,0 +1,29 @@
+#create-hook-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#create-hook-title {
+  font-family: 'Courier New', Courier, monospace;
+  color: darkorange;
+  width: 400px;
+  text-align: center;
+}
+
+#create-webhook-button {
+  cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #5897fb;
+  color: white;
+  border-radius: 4px;
+  font-size: 16px;
+  height: 70px;
+  width: 200px;
+}
+
+#create-webhook-button:hover {
+  box-shadow: 0 0 5px 0 navy;
+}
+

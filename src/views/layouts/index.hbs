@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FakeLab</title>
+  <link rel="icon" href="/assignment/img/gitlab-heart.png">
+  <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet"></link>
+  <link rel="stylesheet" href="/assignment/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/2.8.2/slimselect.min.js"></script>
+  <script src="/assignment/js/eventListeners.js" type="module"></script>
+</head>
+<body>
+  {{>header}}
+  {{#if flashmessage}}
+    <div class="flash-container">
+      <p>{{flashmessage}}</p>
+    </div>
+  {{/if}}
+  <div id="big-div">
+    {{{body}}}
+  </div>
+  {{>footer}}
+</body>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  const flash = document.querySelector('.flash-container')
+  if (flash) {
+    const parent = flash.parentNode
+    setTimeout(function() {
+      parent.removeChild(flash)
+    }, 3000)
+  }
+})
+</script>
+</html>

@@ -1,0 +1,183 @@
+/* grid layout */
+.issue-grid {
+  margin-top: 30px;
+  margin-bottom: 70px;
+  width: 90%;
+  height: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  overflow: scroll;
+}
+
+/* container for issue details */
+.issue-grid-item {
+  height: 700px;
+  border: 2px solid navy;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: cornflowerblue;
+  overflow: scroll;
+}
+
+/* all section titles */
+.title {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+
+/* for all sections */
+.common-section {
+  width: 90%;
+  max-width: 90%;
+  min-width: 90%;
+  border: 2px solid navy;
+  border-radius: 4px;
+  padding: 4px;
+  background-color: white;
+}
+
+/* section display type */
+.s-type1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* section display type */
+.s-type2 {
+  display: flex;
+  justify-content: start;
+}
+
+/* section display type */
+.s-type3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* bar containing info */
+.state-bar {
+  font-size: 12px;
+  text-align: center;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  color: white;
+}
+
+/* change issue status button */
+.button {
+  font-size: 12px;
+  cursor: pointer;
+  text-align: center;
+  width: 20%;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: #5897fb;
+  color: white;
+}
+
+.button:hover {
+  box-shadow: 0 0 10px 0 navy;
+}
+
+/* bar containing info */
+.author-bar {
+  font-size: 12px;
+  text-align: center;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: white;
+}
+
+/* bar containing info */
+.label-bar {
+  text-align: center;
+  width: auto;
+  border: 0.2px solid black;
+  border-radius: 4px;
+  padding: 10px;
+  background-color: white;
+  color: white;
+  margin-right: 5px;
+}
+
+/* bar containing info */
+.emoji {
+  cursor: pointer;
+  text-align: center;
+  width: auto;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  background-color: white;
+  margin-right: 5px;
+}
+
+.emoji:hover {
+  box-shadow: 0 0 10px 0 navy;
+}
+
+.emoji-panel {
+  min-height: 38px;
+  flex-wrap: wrap;
+}
+
+/* issue description */
+.issue-description {
+  cursor: pointer;
+  max-height: 30%;
+  height: 30%;
+  min-height: 30%;
+  overflow: scroll;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+/* issue description */
+.issue-description:hover {
+  box-shadow: 0 0 10px 0 navy;
+}
+
+/* issue description (when modifiying it) */
+.modify-description-textarea {
+  height: 30%;
+  max-height: 30%;
+  min-height: 30%;
+  overflow: scroll;
+  line-height: 1.5;
+  color: white;
+  background-color: #5897fb;
+}
+
+.modify-description-textarea:focus {
+  box-shadow: 0 0 10px 0 navy;
+}
+
+/* css for slim select labels */
+.slim-select {
+  width: 92%;
+  max-width: 92%;
+  border: 2px solid navy;
+  box-shadow: none
+}
+
+.slim-select:hover, .slim-select:focus {
+  box-shadow: 0 0 10px 0 navy;
+}
+
+.pillColor {
+  background-color: white;
+}

@@ -1,0 +1,26 @@
+<header class="nav-length head-nav">
+  <nav>
+    <ul class="links">
+      <li class="li-first">
+        <div class="nav-img-container">
+          <img src="/assignment/img/gitlab-heart.png" alt="gitlab-logo" id="nav-img">
+        </div>
+      </li>
+      <li>
+        <a href="/assignment/">Home</a>
+      </li>
+      {{#if enabled}}
+        <li>
+          <a href="/assignment/projectselect/">Track project</a>
+        </li>
+        <li>
+          <a href="/assignment/access/logout/">Logout</a>
+        </li>
+      {{else}}
+        <li>
+          <a href="/assignment/access/login/">Login</a>
+        </li>
+      {{/if}}
+    </ul>
+  </nav>
+</header>

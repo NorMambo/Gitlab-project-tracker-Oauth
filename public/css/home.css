@@ -1,0 +1,21 @@
+#home-container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.info-home {
+  color: darkorange;
+  font-family: 'Courier New', Courier, monospace;
+  width: 400px;
+  text-align: center;
+}
+
+.title-home {
+  color: navy;
+  font-family: 'Courier New', Courier, monospace;
+  width: 400px;
+  text-align: center;
+}
