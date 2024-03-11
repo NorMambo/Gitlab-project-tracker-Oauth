@@ -1,7 +1,7 @@
-# B3 Production
+# Gitlab-Issue-Tracker-Oauth
 
-## Grading:
-- The user can track all of their projects.
+## Functionality:
+- The user can track all of their GitLab projects.
 - The user can see issue state changes in real time (and change) the issue state.
 - The user can see issue labels changes in real time (and change) the issue labels.
 - The user can see issue emoji changes in real time (and change) the issue emojis.
@@ -42,4 +42,4 @@
 
 ## Video:
 
-https://youtu.be/wJsl_fdP15A
+[https://youtu.be/wJsl_fdP15A]
